@@ -8,19 +8,27 @@ body{
 h1{
     font-size: 60px;
 }
-span{
+.orange-color{
     color: orangered;
 }
 .top-banner{
-    display: flex;
     background-image: url(./images/top-banner.png);
     background-repeat: no-repeat;
+}
+
+
+
+
+.flexible-container{
+    display: flex;
     margin-bottom: 160px;
 }
 .half-width{
     width:50%;
     padding-left: 5%;
     padding-right: 5%;
+    
+    
     
 }
 .half-width img{
@@ -46,3 +54,43 @@ background-image: url(./images/dream-bg.png);
 background-repeat: no-repeat;
 background-position: right;
 }
+
+.footer-style{
+    box-shadow: 10px 10px 50px gray;
+    width: 40%;
+    margin-left: 5%;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    border-left: 10px solid;
+    border-right: 10px solid;
+    
+}
+.experience-area{
+    background-image: url(./images/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+div p{
+    text-align: justify;
+}
+
+#web-dev{
+    border-left: 10px solid;
+  
+border-image: linear-gradient(rgb(23, 11, 190), rgb(7, 253, 241));
+border-image-slice: 1;
+}
+
+#website-dev{
+    border-left: 10px solid;
+  
+    border-image: linear-gradient(rgb(190, 11, 11), rgb(252, 9, 191));
+    border-image-slice: 1;
+}
+p{
+    text-align: center;
+}
+
+  
