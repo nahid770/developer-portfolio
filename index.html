@@ -5,23 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nahid portfolio website</title>
+    <title>portfolio website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <section class="top-banner flexible-container" >
+<body >
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <img src="./images/logo.png" alt="">
+        </div>
+        <nav class="nav-menu"> 
+            <ul class="nav-wrapper">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+   <!-- Hero section -->
+    <section id="hero" class="top-banner flexible-container" >
         <div class="half-width">
-            <h1>Wellcome To</h1>
-            <h1><span class="orange-color">Rising star's</span> World</h1>
-            <h3>A passionate Website Developer</h3>
-            <p>Website building is my hobby. I love to do this. I work everyday a minimum of 10/12 hour a day. Website
+            <h1 class="heading-text">Hey, It's</h1>
+            <h1 class="heading-text-second"><span class="orange-color">Nur Alam Nahid</span></h1>
+            <h3 class="heading-sub-text">A passionate Website Developer</h3>
+            <p class="hero-description">Website building is my hobby. I love to do this. I work everyday a minimum of 10/12 hour a day. Website
                 building is my favourite work.I have started doing coding from an early stage of my life. In 2019 I
                 started learning coding form online resorc and youtube. Wish me a good luck in my journey...</p>
-            <a class="hire-button" target="blank" href="https://www.fiverr.com/nahid770?up_rollout=true"> HIRE ME</a>
+            <a class="hire-button" target="blank" href="#"> HIRE ME</a>
         </div>
         <div class="half-width">
             <img src="./images/my-bg.png" alt="">
@@ -33,7 +51,9 @@
             <img src="./images/my-yhg.png" alt="">
         </div>
 
-<div  class="half-width">
+
+<!-- About section -->
+<div id="about" class="half-width">
     <h1>Dream Big</h1>
 <h3 class="orange-color">Become a web developer</h3>
 
@@ -43,10 +63,78 @@
 
     </section>
 
-    <section class="experience-area">
-<h1>Experiences</h1>
+    <!-- Services section-->
+    <section id="service" class="service-section">
+        <h2 class="service-heading">Services I Provide</h2>
+        <div class="service-area">
+            <div class="service-wrapper">
+                <div class="service">
+                    <div class="img-wrapper">
+                        <img src="./images//web-design-brush-icon.svg" alt="web design">
+                    </div>
+                    <h2 class="service-sub-heading">Website design</h2>
+                    <p class="service-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, distinctio perferendis. Enim iusto, eius voluptas error aspernatur dolorem voluptates natus.</p>
+                </div>
+                <div class="service">
+                    <div class="img-wrapper">
+                        <img src="./images/pen-tool-icon.svg" alt="web design">
+                    </div>
+                    <h2 class="service-sub-heading">Graphic design</h2>
+                    <p class="service-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, distinctio perferendis. Enim iusto, eius voluptas error aspernatur dolorem voluptates natus.</p>
+                </div>
+                <div class="service">
+                    <div class="img-wrapper">
+                        <img src="./images/brush-pencil-icon.svg" alt="web design">
+                    </div>
+                    <h2 class="service-sub-heading">UI/UX design</h2>
+                    <p class="service-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, distinctio perferendis. Enim iusto, eius voluptas error aspernatur dolorem voluptates natus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects section-->
+    <section id="projects" class="projects-section">
+        <h2 class="project-heading">Projects I've Made</h2>
+        <div class="projects-wrapper">
+            <div class="all-projects">
+                <div class="single-project">
+                    <div class="project-img">
+                        <img src="./images/1.jpg" alt="">
+                    </div>
+                    <h2 class="project-sub-heading">Business website design</h2>
+                    <p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero necessitatibus distinctio molestias repellendus quidem est odio, dicta minus sunt asperiores.</p>
+                    <a class="hire-button" target="blank" href="#"> see more</a>
+                </div>
+                <div class="single-project">
+                    <div class="project2-img">
+                        <img src="./images/2.png" alt="">
+                    </div>
+                    <h2 class="project-sub-heading">Graphic design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero necessitatibus distinctio molestias repellendus quidem est odio, dicta minus sunt asperiores.</p>
+                    <a class="hire-button" target="blank" href="#"> see more</a>
+                </div>
+                <div class="single-project">
+                    <div class="project3-img">
+                        <img src="./images/3.png" alt="">
+                    </div>
+                    <h2 class="project-sub-heading">App ui ux design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero necessitatibus distinctio molestias repellendus quidem est odio, dicta minus sunt asperiores.</p>
+                    <a class="hire-button" target="blank" href="#"> see more</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Experience section-->
+
+    <section id="experience" class="experience-area">
+<h1 class="experience-heading">Experiences</h1>
 <div class="flexible-container">
-    <div id="web-dev" class="footer-style">
+    <div id="web-dev" class="experience">
         <h2>Full stack Web Developer</h2>
     <h3 class="orange-color"> 2022-present / Pro Level Developer</h3>
     <p> I'm Nahid from Bangladesh. I complete my HSC in 2020 and now I am in a university. I have a great attraction in video editing. I'm a professional video editor. I have more then 3 years of experience and have successfully completed many projects. My main duty is client satisfaction, I always try to understand client's needs and give them the best output as their requirement.</p>
@@ -54,20 +142,33 @@
     
     
     </div>
-    <div id="website-dev" class="footer-style">
+    <div id="website-dev" class="experience">
        <h2> Baby Web Developer</h2>
        <h3 class="orange-color">2022-2024 Pro Level Learner</h3>
        <p>I have some skills, in some of this I'm an expert and in some, I'm a learner. Video editing is my passion I love to do this. I work a minimum of 9/10 hours a day. I create highly engaging eye-catchy videos for my client. I love writing that's why I created this blog IT WORLD in this blog I write about Online tools and Digital Products. I;m a Social Media Designer too. I can Design Facebook ad, Instagram post etc I know a little bit Web design and Web development too. </p>
 </div>
-
-
 </div>
 
     </section>
+</main>
 
   <footer>
-      <p>©Rising star 2022 / a programming hero initiative</p>
+      <div class="footer-area">
+        <nav class="footer-menu"> 
+            <ul class="footer-wrapper">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+            </ul>
+        </nav>
+        <div>
+            <p class="footer-text">©copyright 2023 | All right reserved by Nur Nahid</p>
+            <img src="./images//NurNahid.jpg" alt="">
+        </div>
+      </div>
   </footer>
-</body>
 
+</body>
 </html>

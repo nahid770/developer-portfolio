@@ -1,24 +1,60 @@
-
-
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    width: 1140px;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+}
+
+
+/* Header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+    height: 90px;
+    background: #ddf3fd7a;
+    margin-top: 15px;
+    border-radius: 12px;
+    padding-right: 10px;
+}
+.logo img{
+    width: 60px;
+}
+.nav-wrapper {
+display: flex;
+gap: 20px;
+}
+.nav-wrapper li {
+  list-style: none;
+}
+.nav-wrapper li a{
+    color: black;
+    text-decoration: none;
+    padding: 10px 5px;
+}
+.nav-wrapper li a:hover{
+    color: white;
+    background: #a305ffde;
+    padding: 10px 5px;
+    border-radius: 1px;
 }
 h1{
     font-size: 60px;
+    margin: 0;
 }
 .orange-color{
     color: orangered;
+}
+.heading-text-second{
+    margin-bottom: 40px;
 }
 .top-banner{
     background-image: url(./images/top-banner.png);
     background-repeat: no-repeat;
 }
-
-
-
-
 .flexible-container{
     display: flex;
     margin-bottom: 160px;
@@ -27,25 +63,29 @@ h1{
     width:50%;
     padding-left: 5%;
     padding-right: 5%;
-    
-    
-    
 }
 .half-width img{
     width:90%;
-
 }
-
 a{
     color:rgb(255, 255, 255)
 }
 .hire-button{
     text-decoration: none;
-    background-image: linear-gradient(rgb(202, 12, 145), orangered);
     padding: 10px 30px;
     font-weight: 10px;
-    border-radius: 6px;
-   cursor: pointer;
+    cursor: pointer;
+    background: #a305ffde;
+    transition: all .5s;
+    margin-top: 30px;
+   
+}
+.hire-button:hover{
+    background: #0c0211de;
+  
+}
+.hero-description{
+    margin-bottom: 30px;
 }
 
 .dream-big{
@@ -54,8 +94,107 @@ background-image: url(./images/dream-bg.png);
 background-repeat: no-repeat;
 background-position: right;
 }
+/* service section */
+.service-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.service{
+    padding: 20px 20px;
+    border: 1px solid rgba(212, 212, 212, 0.514);
+    border-radius: 30px;
+    box-shadow: 3px 1px 5px rgba(16, 2, 29, 0.144);
+    transition: all .5s;
+}
+.service:hover{
+    
+   background:#a305ffde ;
+}
+.service:hover .service-sub-heading{
+  color: white;
+}
+.service:hover .service-text{
+  color: white;
+}
+.service-heading{
+    font-size: 60px;
+    text-align: center;
+    opacity: 0.5;
+}
+.img-wrapper{
+    text-align: center;
+}
+.img-wrapper img{
+    width: 50px;
+}
+.service-sub-heading{
+    text-align: center;
+}
+.service-text{
+   font-weight: 200px; 
+}
 
-.footer-style{
+/* Projects */
+.projects-section{
+   height: 110vh;
+   background: rgba(186, 189, 253, 0.37);
+   padding-left: 20px;
+   padding-right: 20px;
+   border-radius: 12px;
+   margin-bottom: 80px;
+}
+.all-projects{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+gap: 20px;
+}
+.single-project{
+padding: 20px 30px;
+border: 1px solid rgba(201, 201, 201, 0.918);
+border-radius: 10px;
+}
+.project-img img{
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.project2-img img{
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.project3-img img{
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.project-heading{
+    padding-top: 30px;
+    font-size: 60px;
+    text-align: center;
+    opacity: 0.5;
+    margin-bottom: 80px;
+}
+.project-desc{
+    margin-bottom: 20px;
+}
+
+/* Experience */
+.experience-heading{
+    padding-top: 30px;
+    font-size: 60px;
+    text-align: center;
+    opacity: 0.5;
+    margin-bottom: 80px;
+}
+.experience{
     box-shadow: 10px 10px 50px gray;
     width: 40%;
     margin-left: 5%;
@@ -64,13 +203,8 @@ background-position: right;
     border-radius: 5px;
     border-left: 10px solid;
     border-right: 10px solid;
-    
 }
-.experience-area{
-    background-image: url(./images/exp-bg.png);
-    background-repeat: no-repeat;
-    background-position: left;
-}
+
 
 div p{
     text-align: justify;
@@ -93,4 +227,33 @@ p{
     text-align: center;
 }
 
-  
+/* Footer  */
+footer{
+    height: 200px;
+    background: rgba(0, 0, 0, 0.945);
+    border-radius: 12px;
+}
+.footer-text{
+    text-align: center;
+}
+
+  .footer-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin-bottom:30px;
+  }
+
+  .footer-wrapper li{
+    margin-top: 60px;
+    list-style: none;
+  }
+  .footer-wrapper li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  .footer-text{
+    color: white;
+    font-size: 14px;
+  }
